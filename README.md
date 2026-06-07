@@ -30,7 +30,6 @@
 | 项目全貌 | [项目介绍.md](docs/项目介绍.md) | 1 页概览 + 5 大亮点 + 典型用户旅程 |
 | 架构与实现 | [技术文档.md](docs/技术文档.md) | 系统架构图 + Skill 详细设计 + 部署集成 + API 契约 |
 | 测试用例 | [测试手册.md](docs/测试手册.md) | 8 大 Skill 测试 + 联动测试 + 沙盒测试 + 问题排查 |
-| 8 分钟演示 | [演示脚本.md](docs/演示脚本.md) | 现场演示用：计时锚点 + 话术 + 风险预案 |
 
 ---
 
@@ -67,9 +66,9 @@ openclaw skills check | grep -E "food-order|commute|leisure|life-service|weather
 # "帮我盯着海底捞排队"     → 验证 7×24 监控
 
 # 7. 验证辅助脚本（可选）
-node skills/shared/scripts/city-utils.js search restaurant '{"cuisine":"川菜"}'
-node skills/always-on-scheduler/scripts/task-scheduler.js simulate
-node skills/user-preference-memory/scripts/preference-manager.js show
+skills/shared/scripts/city-utils.js search restaurant '{"cuisine":"川菜"}'
+skills/always-on-scheduler/scripts/task-scheduler.js simulate
+nskills/user-preference-memory/scripts/preference-manager.js show
 ```
 
 ---
@@ -99,8 +98,7 @@ node skills/user-preference-memory/scripts/preference-manager.js show
 ├── docs/                                    # 项目文档
 │   ├── 项目介绍.md
 │   ├── 技术文档.md
-│   ├── 测试手册.md
-│   └── 演示脚本.md
+│   └── 测试手册.md
 │
 ├── skills/                                  # 8 大 Skill + 共享数据
 │   ├── shared/                              # 共享虚拟城市数据
@@ -154,7 +152,7 @@ A: 偏好以 JSON 格式持久化存储在本地，每次对话开始时自动�
 
 | 措施 | 说明 |
 |------|------|
-| 全模拟数据 | 25 餐厅 / 18 场所 / 4 地铁线 / 天气 / 优惠均为虚构 |
+| 全模拟数据 | 25 餐厅 / 18 场所 / 4 地铁线 / 天气 / 优惠 均为虚构 |
 | 无真实 API 调用 | 不接入美团/高德/天气/支付等任何真实第三方 API |
 | 无用户信息收集 | 不收集姓名、手机号、地址等任何真实个人信息 |
 | 偏好本地存储 | 偏好仅存储在本地 JSON 文件，不上传任何服务器 |

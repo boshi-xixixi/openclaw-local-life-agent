@@ -35,7 +35,6 @@ if [ ! -d "${PROJECT_DIR}/skills" ]; then
   echo "[错误] 未找到 ${PROJECT_DIR}/skills 目录"
   exit 1
 fi
-
 # 确保目标目录存在
 mkdir -p "${SKILLS_DIR}"
 
@@ -57,7 +56,6 @@ for s in "${SKILLS[@]}"; do
   fi
   echo "  [完成] ${s}"
 done
-
 # 复制 shared 数据层
 echo "[2/4] 复制共享数据层..."
 src="${PROJECT_DIR}/skills/${SHARED}"
@@ -71,7 +69,6 @@ if [ -d "${src}" ]; then
   fi
   echo "  [完成] ${SHARED}"
 fi
-
 # 复制 SOUL.md 人设
 echo "[3/4] 部署 SOUL.md 人设..."
 mkdir -p "${SOUL_DIR}"
@@ -81,7 +78,6 @@ if [ -f "${PROJECT_DIR}/SOUL.md" ]; then
 else
   echo "  [跳过] SOUL.md 不存在"
 fi
-
 # 验证
 echo "[4/4] 验证..."
 echo ""
