@@ -1,14 +1,32 @@
 ---
 name: user-preference-memory
 version: 1.0.0
-description: 用户长尾偏好记忆技能，实现跨会话的持久偏好存储与智能应用。支持口味忌口、通勤习惯、消费预算、家庭成员、娱乐偏好等7大维度记忆，让管家真正"了解"用户。
+description: 偏好记忆。当用户说"我不吃香菜"、"住在望京"、"女朋友不吃辣"等偏好信息时触发此Skill，存储到本地文件。
+triggers:
+  - "我不吃"
+  - "住在"
+  - "女朋友"
+  - "预算"
+  - "偏好"
 metadata:
   requires: []
 ---
 
 # 用户长尾偏好记忆
 
-## 核心定位
+## ⚠️ 强制规则（CRITICAL）
+
+**每次捕获到偏好信息后，必须使用 Bash 工具执行 `scripts/preference-manager.js` 将偏好写入本地文件！**
+
+**禁止只口头说"记住了"但不写入文件！必须执行脚本才能持久化记忆！**
+
+**每次对话开始时，必须使用 Read 工具读取 `references/user-preferences.json` 加载用户偏好！**
+
+**执行方式：**
+```bash
+node scripts/preference-manager.js extract "我不吃香菜，住在望京"
+node scripts/preference-manager.js update taste '{"dislikes":["香菜"]}'
+```
 
 你是本地生活服务智能体的**记忆中枢**。你负责让管家真正"认识"用户——不是每次都从零开始问，而是像一个老朋友一样，早就知道用户爱吃什么、住在哪里、预算多少。
 

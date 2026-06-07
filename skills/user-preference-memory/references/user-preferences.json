@@ -1,15 +1,11 @@
 {
   "user_id": "default",
-  "created_at": "2026-06-06T10:52:08.037Z",
-  "updated_at": "2026-06-06T10:52:08.074Z",
+  "created_at": "2026-06-07T09:23:55.781Z",
+  "updated_at": "2026-06-07T09:23:55.782Z",
   "preferences": {
     "taste": {
-      "likes": [
-        "川菜"
-      ],
-      "dislikes": [
-        "香菜"
-      ],
+      "likes": [],
+      "dislikes": [],
       "spicy_level": "未知",
       "allergies": []
     },
@@ -40,7 +36,7 @@
     "family": {
       "has_child": false,
       "child_age": null,
-      "has_partner": true,
+      "has_partner": false,
       "partner_likes": [],
       "partner_dislikes": []
     },
@@ -49,22 +45,14 @@
       "dislikes": [],
       "preferred_type": null
     },
-    "special_dates": {
-      "partner_birthday": "08-15"
-    }
+    "special_dates": {}
   },
   "memory_log": [
     {
-      "time": "2026-06-06T10:52:08.038Z",
+      "time": "2026-06-07T09:23:55.782Z",
       "action": "RESET",
       "category": "all",
       "detail": "偏好已重置为默认值"
-    },
-    {
-      "time": "2026-06-06T10:52:08.074Z",
-      "action": "EXTRACT",
-      "category": "auto",
-      "detail": "从对话提取: 不喜欢: 香菜; 喜欢: 川菜; 住址: 望京; 有伴侣: 是; 伴侣生日: 08-15"
     }
   ]
 }

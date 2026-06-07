@@ -1,0 +1,83 @@
+{
+  "city": {
+    "name": "新城市",
+    "districts": [
+      {"id": "D01", "name": "朝阳区", "center": [116.47, 39.92]},
+      {"id": "D02", "name": "海淀区", "center": [116.30, 39.96]},
+      {"id": "D03", "name": "西城区", "center": [116.37, 39.91]},
+      {"id": "D04", "name": "东城区", "center": [116.42, 39.93]},
+      {"id": "D05", "name": "丰台区", "center": [116.29, 39.86]},
+      {"id": "D06", "name": "通州区", "center": [116.66, 39.91]}
+    ]
+  },
+  "restaurants": [
+    {"id": "R01", "name": "辣味川菜馆", "cuisine": "川菜", "district": "D01", "address": "朝阳区建国路88号", "coord": [116.47, 39.93], "avg_price": 85, "rating": 4.7, "tags": ["辣","聚会","川味"], "signature_dishes": ["剁椒鱼头","水煮牛肉","麻婆豆腐"], "hours": "11:00-22:00", "has_delivery": true, "child_friendly": true, "outdoor_seating": false, "parking": true, "box": true},
+    {"id": "R02", "name": "湘约味道", "cuisine": "湘菜", "district": "D01", "address": "朝阳区三里屯路19号", "coord": [116.45, 39.94], "avg_price": 95, "rating": 4.6, "tags": ["辣","地道","湘味"], "signature_dishes": ["小炒黄牛肉","手撕包菜","剁椒蒸鱼"], "hours": "10:30-22:00", "has_delivery": true, "child_friendly": false, "outdoor_seating": true, "parking": false, "box": true},
+    {"id": "R03", "name": "粤来粤好", "cuisine": "粤菜", "district": "D03", "address": "西城区金融街15号", "coord": [116.36, 39.91], "avg_price": 130, "rating": 4.8, "tags": ["清淡","商务","早茶"], "signature_dishes": ["白切鸡","虾饺皇","煲仔饭"], "hours": "07:00-22:00", "has_delivery": false, "child_friendly": true, "outdoor_seating": false, "parking": true, "box": true},
+    {"id": "R04", "name": "和风日本料理", "cuisine": "日料", "district": "D01", "address": "朝阳区亮马桥路50号", "coord": [116.46, 39.95], "avg_price": 180, "rating": 4.9, "tags": ["约会","精致","刺身"], "signature_dishes": ["三文鱼刺身","天妇罗","味噌汤"], "hours": "11:00-23:00", "has_delivery": true, "child_friendly": true, "outdoor_seating": false, "parking": true, "box": true},
+    {"id": "R05", "name": "老北京涮羊肉", "cuisine": "火锅", "district": "D04", "address": "东城区王府井大街138号", "coord": [116.41, 39.92], "avg_price": 110, "rating": 4.5, "tags": ["冬天","聚会","铜锅"], "signature_dishes": ["手切鲜羊肉","麻酱蘸料","糖蒜"], "hours": "11:00-23:00", "has_delivery": false, "child_friendly": true, "outdoor_seating": false, "parking": true, "box": true},
+    {"id": "R06", "name": "意面工坊", "cuisine": "西餐", "district": "D01", "address": "朝阳区国贸商城B1", "coord": [116.46, 39.91], "avg_price": 120, "rating": 4.4, "tags": ["约会","浪漫","意式"], "signature_dishes": ["奶油蘑菇意面","玛格丽特披萨","提拉米苏"], "hours": "10:00-22:00", "has_delivery": true, "child_friendly": true, "outdoor_seating": true, "parking": true, "box": false},
+    {"id": "R07", "name": "小郡肝串串香", "cuisine": "串串", "district": "D02", "address": "海淀区五道口华联3楼", "coord": [116.34, 39.99], "avg_price": 65, "rating": 4.3, "tags": ["辣","夜宵","便宜"], "signature_dishes": ["牛肉串","土豆串","冰粉"], "hours": "11:00-02:00", "has_delivery": true, "child_friendly": false, "outdoor_seating": false, "parking": false, "box": false},
+    {"id": "R08", "name": "苏浙汇", "cuisine": "江浙菜", "district": "D03", "address": "西城区西单大悦城6F", "coord": [116.37, 39.91], "avg_price": 105, "rating": 4.6, "tags": ["清淡","精致","江浙"], "signature_dishes": ["红烧肉","龙井虾仁","西湖醋鱼"], "hours": "10:00-22:00", "has_delivery": true, "child_friendly": true, "outdoor_seating": false, "parking": true, "box": true},
+    {"id": "R09", "name": "韩式烤肉屋", "cuisine": "韩餐", "district": "D01", "address": "朝阳区望京SOHO T1", "coord": [116.48, 39.99], "avg_price": 95, "rating": 4.5, "tags": ["聚会","烤肉","韩式"], "signature_dishes": ["五花肉","石锅拌饭","韩式炸鸡"], "hours": "11:00-23:00", "has_delivery": true, "child_friendly": true, "outdoor_seating": false, "parking": true, "box": true},
+    {"id": "R10", "name": "素心斋", "cuisine": "素食", "district": "D02", "address": "海淀区中关村南大街5号", "coord": [116.32, 39.96], "avg_price": 75, "rating": 4.7, "tags": ["素食","健康","清净"], "signature_dishes": ["松茸汤","素鹅","五谷丰登"], "hours": "10:00-21:00", "has_delivery": true, "child_friendly": true, "outdoor_seating": true, "parking": true, "box": false},
+    {"id": "R11", "name": "泰香米", "cuisine": "泰餐", "district": "D01", "address": "朝阳区三里屯太古里南区", "coord": [116.45, 39.93], "avg_price": 115, "rating": 4.5, "tags": ["酸辣","异域","约会"], "signature_dishes": ["冬阴功汤","芒果糯米饭","绿咖喱鸡"], "hours": "11:00-22:00", "has_delivery": true, "child_friendly": false, "outdoor_seating": true, "parking": false, "box": true},
+    {"id": "R12", "name": "兰州牛肉面", "cuisine": "面食", "district": "D05", "address": "丰台区方庄路18号", "coord": [116.29, 39.87], "avg_price": 25, "rating": 4.2, "tags": ["便宜","快餐","拉面"], "signature_dishes": ["牛肉拉面","凉皮","肉夹馍"], "hours": "06:00-22:00", "has_delivery": true, "child_friendly": true, "outdoor_seating": false, "parking": false, "box": false},
+    {"id": "R13", "name": "海底捞", "cuisine": "火锅", "district": "D02", "address": "海淀区中关村欧美汇5F", "coord": [116.31, 39.98], "avg_price": 130, "rating": 4.8, "tags": ["服务好","聚会","等位"], "signature_dishes": ["番茄锅底","捞面表演","虾滑"], "hours": "10:00-07:00", "has_delivery": true, "child_friendly": true, "outdoor_seating": false, "parking": true, "box": true},
+    {"id": "R14", "name": "花厨", "cuisine": "创意菜", "district": "D04", "address": "东城区南锣鼓巷45号", "coord": [116.40, 39.94], "avg_price": 160, "rating": 4.6, "tags": ["拍照","约会","网红"], "signature_dishes": ["玫瑰沙拉","鲜花饼","松露意面"], "hours": "11:00-22:00", "has_delivery": false, "child_friendly": false, "outdoor_seating": true, "parking": false, "box": false},
+    {"id": "R15", "name": "沙县小吃", "cuisine": "小吃", "district": "D06", "address": "通州区新华西街12号", "coord": [116.66, 39.90], "avg_price": 20, "rating": 3.8, "tags": ["便宜","快餐","日常"], "signature_dishes": ["拌面","蒸饺","炖罐"], "hours": "06:00-23:00", "has_delivery": true, "child_friendly": true, "outdoor_seating": false, "parking": false, "box": false},
+    {"id": "R16", "name": "巴奴毛肚火锅", "cuisine": "火锅", "district": "D01", "address": "朝阳区大望路SOHO现代城", "coord": [116.47, 39.91], "avg_price": 125, "rating": 4.7, "tags": ["毛肚","聚会","品质"], "signature_dishes": ["毛肚","茴香小油条","井水黄豆芽"], "hours": "11:00-23:00", "has_delivery": true, "child_friendly": true, "outdoor_seating": false, "parking": true, "box": true},
+    {"id": "R17", "name": "西贝莜面村", "cuisine": "西北菜", "district": "D02", "address": "海淀区清河万象汇3F", "coord": [116.33, 40.03], "avg_price": 90, "rating": 4.5, "tags": ["家庭","健康","西北"], "signature_dishes": ["莜面鱼鱼","黄馍馍","西贝面筋"], "hours": "10:00-22:00", "has_delivery": true, "child_friendly": true, "outdoor_seating": false, "parking": true, "box": true},
+    {"id": "R18", "name": "鼎泰丰", "cuisine": "台湾菜", "district": "D03", "address": "西城区西直门外大街1号", "coord": [116.35, 39.94], "avg_price": 150, "rating": 4.9, "tags": ["精致","小笼包","商务"], "signature_dishes": ["小笼包","元盅鸡汤","虾仁烧卖"], "hours": "11:00-21:30", "has_delivery": false, "child_friendly": true, "outdoor_seating": false, "parking": true, "box": true},
+    {"id": "R19", "name": "木屋烧烤", "cuisine": "烧烤", "district": "D05", "address": "丰台区丽泽商务区天街5F", "coord": [116.31, 39.86], "avg_price": 80, "rating": 4.4, "tags": ["夜宵","聚会","烧烤"], "signature_dishes": ["烤羊肉串","烤生蚝","烤茄子"], "hours": "17:00-03:00", "has_delivery": true, "child_friendly": false, "outdoor_seating": true, "parking": true, "box": false},
+    {"id": "R20", "name": "米其一星法餐", "cuisine": "法餐", "district": "D04", "address": "东城区东交民巷12号", "coord": [116.42, 39.91], "avg_price": 380, "rating": 4.9, "tags": ["高端","纪念","法式"], "signature_dishes": ["鹅肝","菲力牛排","焦糖布丁"], "hours": "18:00-23:00", "has_delivery": false, "child_friendly": false, "outdoor_seating": true, "parking": true, "box": true},
+    {"id": "R21", "name": "云海肴", "cuisine": "云南菜", "district": "D02", "address": "海淀区学院路15号", "coord": [116.35, 39.98], "avg_price": 75, "rating": 4.3, "tags": ["米线","酸辣","特色"], "signature_dishes": ["过桥米线","汽锅鸡","鲜花饼"], "hours": "10:00-22:00", "has_delivery": true, "child_friendly": true, "outdoor_seating": false, "parking": true, "box": false},
+    {"id": "R22", "name": "喜茶LAB店", "cuisine": "饮品", "district": "D01", "address": "朝阳区三里屯太古里北区", "coord": [116.45, 39.94], "avg_price": 35, "rating": 4.6, "tags": ["下午茶","网红","饮品"], "signature_dishes": ["多肉葡萄","芝芝莓莓","烤黑糖波波"], "hours": "10:00-22:00", "has_delivery": true, "child_friendly": true, "outdoor_seating": true, "parking": false, "box": false},
+    {"id": "R23", "name": "外婆家", "cuisine": "江浙菜", "district": "D03", "address": "西城区宣武门外大街8号", "coord": [116.37, 39.89], "avg_price": 60, "rating": 4.2, "tags": ["实惠","家常","江浙"], "signature_dishes": ["茶香鸡","麻婆豆腐","西湖牛肉羹"], "hours": "10:30-21:30", "has_delivery": true, "child_friendly": true, "outdoor_seating": false, "parking": true, "box": true},
+    {"id": "R24", "name": "蓝蛙西餐酒吧", "cuisine": "西餐", "district": "D01", "address": "朝阳区亮马桥路48号", "coord": [116.46, 39.95], "avg_price": 140, "rating": 4.5, "tags": ["酒吧","汉堡","夜生活"], "signature_dishes": ["蓝蛙汉堡","莫吉托","凯撒沙拉"], "hours": "11:00-02:00", "has_delivery": true, "child_friendly": false, "outdoor_seating": true, "parking": true, "box": false},
+    {"id": "R25", "name": "味千拉面", "cuisine": "日料", "district": "D06", "address": "通州区万达广场B1", "coord": [116.65, 39.91], "avg_price": 45, "rating": 4.0, "tags": ["快餐","拉面","一人食"], "signature_dishes": ["猪骨浓汤拉面","煎饺","抹茶冰淇淋"], "hours": "10:00-22:00", "has_delivery": true, "child_friendly": true, "outdoor_seating": false, "parking": true, "box": false}
+  ],
+  "venues": [
+    {"id": "V01", "name": "朝阳剧场", "type": "演出", "district": "D01", "address": "朝阳区朝阳北路9号", "coord": [116.47, 39.92], "price": 120, "rating": 4.6, "tags": ["话剧","喜剧","演出"], "duration_min": 120, "hours": "14:00-22:00", "child_friendly": true, "outdoor": false, "parking": true},
+    {"id": "V02", "name": "国家大剧院", "type": "演出", "district": "D03", "address": "西城区西长安街2号", "coord": [116.38, 39.90], "price": 280, "rating": 4.9, "tags": ["歌剧","交响乐","高雅"], "duration_min": 150, "hours": "14:00-22:00", "child_friendly": false, "outdoor": false, "parking": true},
+    {"id": "V03", "name": "密室大逃脱", "type": "密室", "district": "D01", "address": "朝阳区三里屯SOHO B座", "coord": [116.45, 39.93], "price": 128, "rating": 4.7, "tags": ["刺激","团队","解谜"], "duration_min": 90, "hours": "10:00-23:00", "child_friendly": false, "outdoor": false, "parking": false},
+    {"id": "V04", "name": "新城市美术馆", "type": "展览", "district": "D04", "address": "东城区五四大街1号", "coord": [116.40, 39.93], "price": 60, "rating": 4.5, "tags": ["艺术","拍照","展览"], "duration_min": 90, "hours": "09:00-17:00", "child_friendly": true, "outdoor": false, "parking": true},
+    {"id": "V05", "name": "万达影城(CBD店)", "type": "电影", "district": "D01", "address": "朝阳区建国路93号万达广场", "coord": [116.47, 39.91], "price": 55, "rating": 4.4, "tags": ["电影","IMAX","约会"], "duration_min": 120, "hours": "09:30-24:00", "child_friendly": true, "outdoor": false, "parking": true},
+    {"id": "V06", "name": "奥林匹克森林公园", "type": "公园", "district": "D01", "address": "朝阳区科荟路33号", "coord": [116.39, 40.01], "price": 0, "rating": 4.8, "tags": ["跑步","野餐","亲子"], "duration_min": 180, "hours": "06:00-21:00", "child_friendly": true, "outdoor": true, "parking": true},
+    {"id": "V07", "name": "新城市水族馆", "type": "亲子", "district": "D02", "address": "海淀区远大路1号", "coord": [116.28, 39.96], "price": 150, "rating": 4.6, "tags": ["亲子","海洋","科普"], "duration_min": 120, "hours": "09:00-18:00", "child_friendly": true, "outdoor": false, "parking": true},
+    {"id": "V08", "name": "VR体验馆", "type": "游戏", "district": "D01", "address": "朝阳区望京花园3区", "coord": [116.47, 39.98], "price": 88, "rating": 4.3, "tags": ["科技","刺激","体验"], "duration_min": 60, "hours": "10:00-22:00", "child_friendly": true, "outdoor": false, "parking": true},
+    {"id": "V09", "name": "朝阳温泉度假村", "type": "温泉", "district": "D01", "address": "朝阳区金盏乡楼梓庄", "coord": [116.56, 39.95], "price": 268, "rating": 4.5, "tags": ["放松","温泉","养生"], "duration_min": 240, "hours": "10:00-22:00", "child_friendly": true, "outdoor": false, "parking": true},
+    {"id": "V10", "name": "乐高探索中心", "type": "亲子", "district": "D02", "address": "海淀区五道口优盛大厦", "coord": [116.34, 39.99], "price": 180, "rating": 4.7, "tags": ["亲子","乐高","创造"], "duration_min": 150, "hours": "10:00-20:00", "child_friendly": true, "outdoor": false, "parking": true},
+    {"id": "V11", "name": "星光KTV", "type": "KTV", "district": "D03", "address": "西城区西单北大街120号", "coord": [116.37, 39.91], "price": 68, "rating": 4.2, "tags": ["唱歌","聚会","夜生活"], "duration_min": 180, "hours": "12:00-02:00", "child_friendly": false, "outdoor": false, "parking": true},
+    {"id": "V12", "name": "朝阳攀岩馆", "type": "运动", "district": "D01", "address": "朝阳区高碑店路8号", "coord": [116.50, 39.91], "price": 98, "rating": 4.4, "tags": ["运动","挑战","健身"], "duration_min": 90, "hours": "09:00-22:00", "child_friendly": true, "outdoor": false, "parking": true},
+    {"id": "V13", "name": "紫竹院公园", "type": "公园", "district": "D02", "address": "海淀区中关村南大街35号", "coord": [116.32, 39.94], "price": 0, "rating": 4.5, "tags": ["散步","荷花","安静"], "duration_min": 120, "hours": "06:00-21:00", "child_friendly": true, "outdoor": true, "parking": true},
+    {"id": "V14", "name": "天坛公园", "type": "景点", "district": "D04", "address": "东城区天坛路甲1号", "coord": [116.41, 39.88], "price": 15, "rating": 4.8, "tags": ["古迹","散步","打卡"], "duration_min": 150, "hours": "06:00-21:00", "child_friendly": true, "outdoor": true, "parking": true},
+    {"id": "V15", "name": "轰趴别墅馆", "type": "聚会", "district": "D05", "address": "丰台区丰台南路18号院", "coord": [116.30, 39.85], "price": 198, "rating": 4.3, "tags": ["聚会","轰趴","别墅"], "duration_min": 300, "hours": "14:00-次日12:00", "child_friendly": false, "outdoor": false, "parking": true},
+    {"id": "V16", "name": "CGV影城(望京店)", "type": "电影", "district": "D01", "address": "朝阳区望京凯德Mall 6F", "coord": [116.47, 39.99], "price": 60, "rating": 4.5, "tags": ["电影","4DX","约会"], "duration_min": 120, "hours": "09:30-24:00", "child_friendly": true, "outdoor": false, "parking": true},
+    {"id": "V17", "name": "陶艺工坊", "type": "手工", "district": "D04", "address": "东城区鼓楼东大街62号", "coord": [116.40, 39.94], "price": 108, "rating": 4.6, "tags": ["手工","文艺","约会"], "duration_min": 120, "hours": "10:00-20:00", "child_friendly": true, "outdoor": false, "parking": false},
+    {"id": "V18", "name": "悦跑室内滑雪场", "type": "运动", "district": "D05", "address": "丰台区南四环西路188号", "coord": [116.29, 39.83], "price": 228, "rating": 4.4, "tags": ["滑雪","刺激","四季"], "duration_min": 120, "hours": "09:00-21:00", "child_friendly": true, "outdoor": false, "parking": true}
+  ],
+  "transport": {
+    "subway_lines": [
+      {"line": "1号线", "color": "#C23A30", "stations": [{"name": "通州北苑","coord":[116.65,39.90]}, {"name": "国贸","coord":[116.46,39.91]}, {"name": "建国门","coord":[116.43,39.91]}, {"name": "东单","coord":[116.42,39.91]}, {"name": "王府井","coord":[116.41,39.92]}, {"name": "西单","coord":[116.37,39.91]}, {"name": "复兴门","coord":[116.36,39.91]}, {"name": "公主坟","coord":[116.31,39.91]}]},
+      {"line": "2号线", "color": "#004B97", "stations": [{"name": "西直门","coord":[116.35,39.94]}, {"name": "鼓楼大街","coord":[116.38,39.95]}, {"name": "东直门","coord":[116.43,39.94]}, {"name": "建国门","coord":[116.43,39.91]}, {"name": "前门","coord":[116.40,39.90]}, {"name": "宣武门","coord":[116.37,39.89]}, {"name": "复兴门","coord":[116.36,39.91]}, {"name": "西直门","coord":[116.35,39.94]}]},
+      {"line": "4号线", "color": "#008B6A", "stations": [{"name": "安河桥北","coord":[116.27,40.01]}, {"name": "中关村","coord":[116.32,39.98]}, {"name": "海淀黄庄","coord":[116.32,39.97]}, {"name": "国家图书馆","coord":[116.32,39.94]}, {"name": "西直门","coord":[116.35,39.94]}, {"name": "西单","coord":[116.37,39.91]}, {"name": "宣武门","coord":[116.37,39.89]}]},
+      {"line": "10号线", "color": "#009BC0", "stations": [{"name": "亮马桥","coord":[116.46,39.95]}, {"name": "三里屯","coord":[116.45,39.94]}, {"name": "国贸","coord":[116.46,39.91]}, {"name": "大望路","coord":[116.47,39.91]}, {"name": "知春路","coord":[116.33,39.97]}, {"name": "海淀黄庄","coord":[116.32,39.97]}, {"name": "五道口","coord":[116.34,39.99]}]}
+    ],
+    "taxi_base_fare": 13,
+    "taxi_per_km": 2.3,
+    "bike_base_fare": 1.5,
+    "subway_base_fare": 3,
+    "subway_per_station": 1
+  },
+  "user_home": {
+    "name": "家",
+    "address": "朝阳区望京西园四区",
+    "coord": [116.47, 39.98]
+  },
+  "user_office": {
+    "name": "公司",
+    "address": "海淀区中关村软件园二期",
+    "coord": [116.30, 40.05]
+  }
+}
