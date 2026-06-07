@@ -1,0 +1,70 @@
+{
+  "user_id": "default",
+  "created_at": "2026-06-06T10:52:08.037Z",
+  "updated_at": "2026-06-06T10:52:08.074Z",
+  "preferences": {
+    "taste": {
+      "likes": [
+        "川菜"
+      ],
+      "dislikes": [
+        "香菜"
+      ],
+      "spicy_level": "未知",
+      "allergies": []
+    },
+    "budget": {
+      "daily_meal": null,
+      "date_budget": null,
+      "group_budget": null,
+      "style": "未知"
+    },
+    "commute": {
+      "home_area": "望京",
+      "home_coord": [
+        116.48,
+        39.99
+      ],
+      "office_area": "中关村",
+      "office_coord": [
+        116.31,
+        39.98
+      ],
+      "preferred_transport": null
+    },
+    "lifestyle": {
+      "wake_time": null,
+      "sleep_time": null,
+      "weekend_style": null
+    },
+    "family": {
+      "has_child": false,
+      "child_age": null,
+      "has_partner": true,
+      "partner_likes": [],
+      "partner_dislikes": []
+    },
+    "entertainment": {
+      "likes": [],
+      "dislikes": [],
+      "preferred_type": null
+    },
+    "special_dates": {
+      "partner_birthday": "08-15"
+    }
+  },
+  "memory_log": [
+    {
+      "time": "2026-06-06T10:52:08.038Z",
+      "action": "RESET",
+      "category": "all",
+      "detail": "偏好已重置为默认值"
+    },
+    {
+      "time": "2026-06-06T10:52:08.074Z",
+      "action": "EXTRACT",
+      "category": "auto",
+      "detail": "从对话提取: 不喜欢: 香菜; 喜欢: 川菜; 住址: 望京; 有伴侣: 是; 伴侣生日: 08-15"
+    }
+  ]
+}

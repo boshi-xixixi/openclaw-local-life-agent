@@ -1,0 +1,61 @@
+{
+  "city": "新城市",
+  "usage_note": "forecast 数组使用 day_offset 表示相对日期：0=今天，1=明天，...，6=第7天。Agent 根据当前日期 + day_offset 计算实际日期和星期。",
+  "forecast": [
+    {"day_offset": 0, "weather": "多云转晴", "temp_high": 28, "temp_low": 18, "wind": "微风", "aqi": "优", "uv_index": 5, "description": "适合户外活动，早晚微凉"},
+    {"day_offset": 1, "weather": "晴", "temp_high": 31, "temp_low": 20, "wind": "南风2级", "aqi": "优", "uv_index": 7, "description": "天气晴好，注意防晒"},
+    {"day_offset": 2, "weather": "小雨", "temp_high": 24, "temp_low": 17, "wind": "东风3级", "aqi": "优", "uv_index": 2, "description": "有雨，建议室内活动，出行带伞"},
+    {"day_offset": 3, "weather": "中雨转阴", "temp_high": 22, "temp_low": 16, "wind": "东北风4级", "aqi": "优", "uv_index": 1, "description": "雨较大，尽量室内活动，地铁出行优先"},
+    {"day_offset": 4, "weather": "阴转多云", "temp_high": 26, "temp_low": 18, "wind": "北风2级", "aqi": "良", "uv_index": 3, "description": "雨停转阴，可以出门但建议备伞"},
+    {"day_offset": 5, "weather": "多云转晴", "temp_high": 29, "temp_low": 19, "wind": "微风", "aqi": "优", "uv_index": 5, "description": "天气舒适，适合户外约会和逛公园"},
+    {"day_offset": 6, "weather": "晴", "temp_high": 33, "temp_low": 21, "wind": "南风2级", "aqi": "良", "uv_index": 7, "description": "较热，注意防暑，室内空调优先"}
+  ],
+  "weekday_mapping": {
+    "0": "周日", "1": "周一", "2": "周二", "3": "周三",
+    "4": "周四", "5": "周五", "6": "周六"
+  },
+  "scenario_rules": {
+    "rain": {
+      "trigger": ["小雨", "阵雨"],
+      "food": {"prefer_delivery": true, "prefer_indoor": true},
+      "transport": {"ban_bike": true, "prefer_subway": true, "time_multiplier": 1.2},
+      "entertainment": {"exclude_outdoor": true, "prefer_indoor": true}
+    },
+    "heavy_rain": {
+      "trigger": ["中雨", "大雨", "暴雨", "雷暴", "中雨转阴"],
+      "food": {"prefer_delivery": true, "prefer_indoor": true},
+      "transport": {"ban_bike": true, "ban_walk": true, "prefer_subway": true, "time_multiplier": 1.4},
+      "entertainment": {"exclude_outdoor": true, "prefer_indoor": true}
+    },
+    "snow": {
+      "trigger": ["小雪", "中雪", "大雪"],
+      "food": {"prefer_hotpot": true, "prefer_warm": true},
+      "transport": {"ban_bike": true, "prefer_subway": true, "time_multiplier": 1.4},
+      "entertainment": {"exclude_outdoor": true, "prefer_indoor": true, "prefer_hot_spring": true}
+    },
+    "high_temp": {
+      "trigger_condition": "temp_high >= 35",
+      "food": {"prefer_cold": true, "avoid_hotpot": true},
+      "transport": {"prefer_taxi": true, "avoid_walk_long": true},
+      "entertainment": {"prefer_indoor_ac": true, "exclude_outdoor": true}
+    },
+    "low_temp": {
+      "trigger_condition": "temp_low <= 5",
+      "food": {"prefer_hotpot": true, "prefer_warm": true},
+      "transport": {"prefer_taxi": true, "avoid_bike": true},
+      "entertainment": {"prefer_indoor": true, "prefer_hot_spring": true, "prefer_ski": true}
+    },
+    "fog": {
+      "trigger": ["雾", "大雾", "霾"],
+      "food": {"prefer_indoor": true},
+      "transport": {"prefer_subway": true, "time_multiplier": 1.3},
+      "entertainment": {"prefer_indoor": true}
+    },
+    "good_weather": {
+      "trigger_condition": "weather in ['晴','多云转晴','多云'] AND 15 <= temp_high <= 32",
+      "food": {"prefer_outdoor_seating": true},
+      "transport": {"allow_all": true},
+      "entertainment": {"prefer_outdoor": true, "prefer_park": true}
+    }
+  }
+}

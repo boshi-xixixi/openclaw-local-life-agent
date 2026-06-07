@@ -1,0 +1,123 @@
+{
+  "active_tasks": [],
+  "completed_tasks": [
+    {
+      "task_id": "queue_monitor_mq28hhux",
+      "type": "queue_monitor",
+      "name": "餐厅排队监控",
+      "status": "COMPLETED",
+      "created_at": "2026-06-06T10:52:16.425Z",
+      "expires_at": "2026-06-06T13:52:16.425Z",
+      "config": {
+        "check_interval_sec": 300,
+        "threshold_tables": 5,
+        "max_watch_hours": 3,
+        "api_endpoint": "/api/queue/{restaurant_id}",
+        "restaurant_id": "R13",
+        "restaurant_name": "海底捞"
+      },
+      "history": [
+        {
+          "time": "2026-06-06 10:52:16",
+          "action": "CREATED",
+          "detail": "监控任务已创建: 餐厅排队监控"
+        },
+        {
+          "time": "19:05",
+          "action": "CHECK",
+          "queue_count": 15
+        },
+        {
+          "time": "19:15",
+          "action": "CHECK",
+          "queue_count": 12
+        },
+        {
+          "time": "19:25",
+          "action": "CHECK",
+          "queue_count": 10
+        },
+        {
+          "time": "19:35",
+          "action": "CHECK",
+          "queue_count": 8
+        },
+        {
+          "time": "19:42",
+          "action": "CHECK",
+          "queue_count": 6
+        },
+        {
+          "time": "19:48",
+          "action": "TRIGGERED",
+          "queue_count": 4
+        },
+        {
+          "time": "19:48",
+          "action": "COMPLETED",
+          "detail": "用户已确认，车辆已叫，取号已完成"
+        }
+      ],
+      "completed_at": "2026-06-06 10:52:16"
+    },
+    {
+      "task_id": "queue_monitor_mq2awuzn",
+      "type": "queue_monitor",
+      "name": "餐厅排队监控",
+      "status": "COMPLETED",
+      "created_at": "2026-06-06T12:00:12.515Z",
+      "expires_at": "2026-06-06T15:00:12.515Z",
+      "config": {
+        "check_interval_sec": 300,
+        "threshold_tables": 5,
+        "max_watch_hours": 3,
+        "api_endpoint": "/api/queue/{restaurant_id}",
+        "restaurant_id": "R13",
+        "restaurant_name": "海底捞"
+      },
+      "history": [
+        {
+          "time": "2026-06-06 12:00:12",
+          "action": "CREATED",
+          "detail": "监控任务已创建: 餐厅排队监控"
+        },
+        {
+          "time": "19:05",
+          "action": "CHECK",
+          "queue_count": 15
+        },
+        {
+          "time": "19:15",
+          "action": "CHECK",
+          "queue_count": 12
+        },
+        {
+          "time": "19:25",
+          "action": "CHECK",
+          "queue_count": 10
+        },
+        {
+          "time": "19:35",
+          "action": "CHECK",
+          "queue_count": 8
+        },
+        {
+          "time": "19:42",
+          "action": "CHECK",
+          "queue_count": 6
+        },
+        {
+          "time": "19:48",
+          "action": "TRIGGERED",
+          "queue_count": 4
+        },
+        {
+          "time": "19:48",
+          "action": "COMPLETED",
+          "detail": "用户已确认，车辆已叫，取号已完成"
+        }
+      ],
+      "completed_at": "2026-06-06 12:00:12"
+    }
+  ]
+}

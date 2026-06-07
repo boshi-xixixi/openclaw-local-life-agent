@@ -1,0 +1,121 @@
+{
+  "cron_jobs": [
+    {
+      "id": "morning_briefing",
+      "name": "每日早安播报",
+      "schedule": "0 8 * * *",
+      "description": "每天早上8点推送天气、日程、推荐",
+      "enabled": true,
+      "actions": [
+        {"step": 1, "skill": "weather-awareness", "action": "get_today_weather"},
+        {"step": 2, "skill": "memory", "action": "load_user_preferences"},
+        {"step": 3, "skill": "always-on-scheduler", "action": "check_special_dates"},
+        {"step": 4, "skill": "always-on-scheduler", "action": "compose_morning_message"}
+      ]
+    },
+    {
+      "id": "weather_check",
+      "name": "天气突变检测",
+      "schedule": "0 */2 * * *",
+      "description": "每2小时检查天气是否发生显著变化",
+      "enabled": true,
+      "actions": [
+        {"step": 1, "skill": "weather-awareness", "action": "get_current_weather"},
+        {"step": 2, "skill": "always-on-scheduler", "action": "compare_with_last_weather"},
+        {"step": 3, "skill": "always-on-scheduler", "action": "trigger_alert_if_changed"}
+      ]
+    },
+    {
+      "id": "special_date_reminder",
+      "name": "特殊日期提醒",
+      "schedule": "0 9 * * *",
+      "description": "每天9点检查3天内的特殊日期",
+      "enabled": true,
+      "actions": [
+        {"step": 1, "skill": "memory", "action": "load_special_dates"},
+        {"step": 2, "skill": "always-on-scheduler", "action": "check_upcoming_dates"},
+        {"step": 3, "skill": "leisure-activity-recommendation", "action": "suggest_celebration_plan"}
+      ]
+    },
+    {
+      "id": "weekend_recommendation",
+      "name": "周末活动推荐",
+      "schedule": "0 18 * * 5",
+      "description": "每周五18点推荐周末活动",
+      "enabled": true,
+      "actions": [
+        {"step": 1, "skill": "weather-awareness", "action": "get_weekend_weather"},
+        {"step": 2, "skill": "memory", "action": "load_entertainment_preferences"},
+        {"step": 3, "skill": "leisure-activity-recommendation", "action": "suggest_weekend_activities"}
+      ]
+    },
+    {
+      "id": "budget_tracker",
+      "name": "月度预算追踪",
+      "schedule": "0 20 * * *",
+      "description": "每天20点检查本月消费是否接近预算上限",
+      "enabled": true,
+      "actions": [
+        {"step": 1, "skill": "always-on-scheduler", "action": "get_monthly_spending"},
+        {"step": 2, "skill": "deal-finder", "action": "suggest_savings_if_over_threshold"}
+      ]
+    }
+  ],
+  "watchers": [
+    {
+      "id": "queue_monitor",
+      "name": "餐厅排队监控",
+      "description": "监控指定餐厅排队情况，剩余桌数≤阈值时提醒用户",
+      "trigger_type": "user_request",
+      "config_template": {
+        "check_interval_sec": 300,
+        "threshold_tables": 5,
+        "max_watch_hours": 3,
+        "api_endpoint": "/api/queue/{restaurant_id}"
+      },
+      "on_trigger": [
+        {"step": 1, "skill": "always-on-scheduler", "action": "notify_user_queue_ready"},
+        {"step": 2, "skill": "commute-planning-assistant", "action": "calculate_route_to_restaurant"},
+        {"step": 3, "skill": "always-on-scheduler", "action": "offer_auto_call_car"}
+      ]
+    },
+    {
+      "id": "traffic_monitor",
+      "name": "通勤路况监控",
+      "description": "高峰时段监控通勤路况，异常拥堵时主动提醒",
+      "trigger_type": "scheduled",
+      "schedule": "*/10 7-9,17-19 * * 1-5",
+      "config_template": {
+        "api_endpoint": "/api/traffic",
+        "congestion_threshold": 1.5,
+        "routes_to_monitor": ["home_to_office", "office_to_home"]
+      },
+      "on_trigger": [
+        {"step": 1, "skill": "commute-planning-assistant", "action": "suggest_alternative_route"},
+        {"step": 2, "skill": "always-on-scheduler", "action": "notify_user_traffic_alert"}
+      ]
+    },
+    {
+      "id": "deal_expiry_monitor",
+      "name": "优惠到期监控",
+      "description": "监控限时优惠，到期前1天提醒用户",
+      "trigger_type": "scheduled",
+      "schedule": "0 10 * * *",
+      "config_template": {
+        "days_before_expiry": 1,
+        "api_endpoint": "/api/deals/expiring"
+      },
+      "on_trigger": [
+        {"step": 1, "skill": "deal-finder", "action": "get_expiring_deals"},
+        {"step": 2, "skill": "always-on-scheduler", "action": "notify_user_deal_expiring"}
+      ]
+    }
+  ],
+  "task_queue": {
+    "max_concurrent_tasks": 3,
+    "default_timeout_hours": 3,
+    "retry_on_failure": true,
+    "max_retries": 2,
+    "priority_order": ["queue_monitor", "traffic_monitor", "weather_check", "deal_expiry_monitor", "budget_tracker"]
+  }
+}

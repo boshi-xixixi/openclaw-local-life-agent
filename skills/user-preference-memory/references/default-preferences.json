@@ -1,0 +1,45 @@
+{
+  "user_id": "default",
+  "created_at": null,
+  "updated_at": null,
+  "preferences": {
+    "taste": {
+      "likes": [],
+      "dislikes": [],
+      "spicy_level": "未知",
+      "allergies": []
+    },
+    "budget": {
+      "daily_meal": null,
+      "date_budget": null,
+      "group_budget": null,
+      "style": "未知"
+    },
+    "commute": {
+      "home_area": "望京",
+      "home_coord": [116.48, 39.99],
+      "office_area": "中关村",
+      "office_coord": [116.31, 39.98],
+      "preferred_transport": null
+    },
+    "lifestyle": {
+      "wake_time": null,
+      "sleep_time": null,
+      "weekend_style": null
+    },
+    "family": {
+      "has_child": false,
+      "child_age": null,
+      "has_partner": false,
+      "partner_likes": [],
+      "partner_dislikes": []
+    },
+    "entertainment": {
+      "likes": [],
+      "dislikes": [],
+      "preferred_type": null
+    },
+    "special_dates": {}
+  },
+  "memory_log": []
+}

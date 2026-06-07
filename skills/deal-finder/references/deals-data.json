@@ -1,0 +1,63 @@
+{
+  "restaurant_deals": [
+    {"restaurant_id": "R01", "name": "辣味川菜馆", "deals": [{"type": "满减", "desc": "满100减15", "condition": "到店消费"}, {"type": "外卖", "desc": "外卖满50减8", "condition": "外卖订单"}]},
+    {"restaurant_id": "R02", "name": "湘约味道", "deals": [{"type": "折扣", "desc": "工作日午市8.5折", "condition": "周一至周五11:00-14:00"}, {"type": "满减", "desc": "满150减20", "condition": "到店消费"}]},
+    {"restaurant_id": "R03", "name": "粤来粤好", "deals": [{"type": "套餐", "desc": "双人早茶套餐228元（原价280）", "condition": "每日07:00-11:00"}, {"type": "折扣", "desc": "65岁以上老人8折", "condition": "凭身份证"}]},
+    {"restaurant_id": "R04", "name": "和风日本料理", "deals": [{"type": "套餐", "desc": "双人刺身套餐328元（原价396）", "condition": "需提前1天预约"}, {"type": "折扣", "desc": "工作日午市8折", "condition": "周一至周五11:00-14:00"}]},
+    {"restaurant_id": "R05", "name": "老北京涮羊肉", "deals": [{"type": "满减", "desc": "满200减30", "condition": "到店消费"}, {"type": "套餐", "desc": "4人铜锅套餐399元（原价520）", "condition": "需提前预约"}]},
+    {"restaurant_id": "R06", "name": "意面工坊", "deals": [{"type": "套餐", "desc": "双人浪漫套餐199元（原价240）", "condition": "含意面+披萨+提拉米苏+饮品"}, {"type": "新人", "desc": "首次到店送提拉米苏一份", "condition": "新用户"}, {"type": "折扣", "desc": "工作日午市8.5折", "condition": "周一至周五"}]},
+    {"restaurant_id": "R07", "name": "小郡肝串串香", "deals": [{"type": "满减", "desc": "满80减10", "condition": "到店消费"}, {"type": "折扣", "desc": "夜宵时段(22:00后)全场8折", "condition": "每日22:00-02:00"}]},
+    {"restaurant_id": "R08", "name": "苏浙汇", "deals": [{"type": "套餐", "desc": "商务双人午餐188元（原价230）", "condition": "工作日11:00-14:00"}, {"type": "满减", "desc": "满200减25", "condition": "到店消费"}]},
+    {"restaurant_id": "R09", "name": "韩式烤肉屋", "deals": [{"type": "套餐", "desc": "双人烤肉套餐168元（原价220）", "condition": "含五花肉+石锅拌饭+炸鸡+饮品"}]},
+    {"restaurant_id": "R10", "name": "素心斋", "deals": [{"type": "折扣", "desc": "周一全素日8折", "condition": "每周一"}, {"type": "套餐", "desc": "双人养生套餐128元（原价160）", "condition": "需提前预约"}]},
+    {"restaurant_id": "R11", "name": "泰香米", "deals": [{"type": "满减", "desc": "满120减15", "condition": "到店消费"}, {"type": "新人", "desc": "首单送芒果糯米饭一份", "condition": "新用户"}]},
+    {"restaurant_id": "R13", "name": "海底捞", "deals": [{"type": "折扣", "desc": "大学生69折", "condition": "凭学生证，周一至周五14:00-17:00"}, {"type": "满减", "desc": "满300减40", "condition": "到店消费"}]},
+    {"restaurant_id": "R14", "name": "花厨", "deals": [{"type": "套餐", "desc": "闺蜜下午茶双人套餐198元（原价260）", "condition": "14:00-17:00"}, {"type": "折扣", "desc": "生日当天凭身份证享8折", "condition": "生日当天"}]},
+    {"restaurant_id": "R16", "name": "巴奴毛肚火锅", "deals": [{"type": "满减", "desc": "满200减25", "condition": "到店消费"}]},
+    {"restaurant_id": "R17", "name": "西贝莜面村", "deals": [{"type": "套餐", "desc": "亲子套餐158元（原价200）", "condition": "含儿童餐+2成人主食"}, {"type": "折扣", "desc": "周二会员日9折", "condition": "会员用户"}]},
+    {"restaurant_id": "R18", "name": "鼎泰丰", "deals": [{"type": "套餐", "desc": "经典小笼包双人套餐258元（原价310）", "condition": "含小笼包+鸡汤+烧卖+小菜"}, {"type": "折扣", "desc": "工作日午市9折", "condition": "周一至周五11:00-14:00"}]},
+    {"restaurant_id": "R19", "name": "木屋烧烤", "deals": [{"type": "满减", "desc": "满150减20", "condition": "到店消费"}, {"type": "折扣", "desc": "周一至周四晚市8.5折", "condition": "17:00-20:00"}]},
+    {"restaurant_id": "R21", "name": "云海肴", "deals": [{"type": "套餐", "desc": "双人云南特色套餐128元（原价160）", "condition": "含过桥米线+汽锅鸡+鲜花饼"}, {"type": "满减", "desc": "满100减12", "condition": "到店消费"}]},
+    {"restaurant_id": "R22", "name": "喜茶LAB店", "deals": [{"type": "新人", "desc": "新用户首杯半价", "condition": "首次到店"}, {"type": "满减", "desc": "满60减8", "condition": "到店消费"}]},
+    {"restaurant_id": "R23", "name": "外婆家", "deals": [{"type": "满减", "desc": "满80减10", "condition": "到店消费"}, {"type": "套餐", "desc": "3人家常套餐148元（原价185）", "condition": "到店消费"}]}
+  ],
+  "transport_deals": [
+    {"type": "打车券", "desc": "新用户5元无门槛打车券", "provider": "模拟打车平台", "condition": "新注册用户"},
+    {"type": "打车券", "desc": "通勤打车周卡25元/5次", "provider": "模拟打车平台", "condition": "限工作日7:00-10:00"},
+    {"type": "打车券", "desc": "周末打车8折券（最高减15元）", "provider": "模拟打车平台", "condition": "周六日可用"},
+    {"type": "地铁月卡", "desc": "100元/月不限次", "provider": "新城市地铁", "condition": "需实名办理"},
+    {"type": "地铁次卡", "desc": "10次卡45元（原价50元）", "provider": "新城市地铁", "condition": "30天内有效"},
+    {"type": "拼车", "desc": "拼车7折优惠", "provider": "模拟打车平台", "condition": "非高峰期"},
+    {"type": "共享单车月卡", "desc": "15元/月不限次", "provider": "模拟单车平台", "condition": "每次前2小时免费"},
+    {"type": "共享单车次卡", "desc": "5次卡6元（原价7.5元）", "provider": "模拟单车平台", "condition": "7天内有效"}
+  ],
+  "venue_deals": [
+    {"venue_id": "V01", "name": "朝阳剧场", "deals": [{"type": "团购", "desc": "2人同行8折", "condition": "提前1天购票"}, {"type": "早鸟", "desc": "提前3天购票7折", "condition": "工作日场次"}]},
+    {"venue_id": "V02", "name": "国家大剧院", "deals": [{"type": "早鸟", "desc": "提前7天购票85折", "condition": "指定场次"}, {"type": "学生票", "desc": "学生专享半价票", "condition": "凭学生证，限量"}]},
+    {"venue_id": "V03", "name": "密室大逃脱", "deals": [{"type": "团购", "desc": "4人同行每人减20元", "condition": "工作日"}, {"type": "学生票", "desc": "凭学生证半价", "condition": "工作日"}]},
+    {"venue_id": "V04", "name": "新城市美术馆", "deals": [{"type": "团购", "desc": "双人票98元（原价120）", "condition": "提前1天购票"}, {"type": "免费", "desc": "每月第一个周三免费开放", "condition": "需提前预约"}]},
+    {"venue_id": "V05", "name": "万达影城(CBD店)", "deals": [{"type": "会员", "desc": "充值500送100", "condition": "会员制度"}, {"type": "早鸟", "desc": "工作日12点前半价", "condition": "工作日早场"}]},
+    {"venue_id": "V07", "name": "新城市水族馆", "deals": [{"type": "亲子套票", "desc": "1大1小198元（原价255）", "condition": "周末及节假日"}, {"type": "团购", "desc": "3人同行85折", "condition": "提前1天购票"}]},
+    {"venue_id": "V08", "name": "VR体验馆", "deals": [{"type": "团购", "desc": "双人票148元（原价176）", "condition": "提前1天预约"}, {"type": "新人", "desc": "首次体验58元（原价88）", "condition": "新用户"}]},
+    {"venue_id": "V09", "name": "朝阳温泉度假村", "deals": [{"type": "团购", "desc": "双人票456元（原价536）", "condition": "提前1天预约"}]},
+    {"venue_id": "V10", "name": "乐高探索中心", "deals": [{"type": "亲子套票", "desc": "1大1小258元（原价330）", "condition": "周末及节假日"}]},
+    {"venue_id": "V11", "name": "星光KTV", "deals": [{"type": "团购", "desc": "3人以上每人减15元", "condition": "工作日"}, {"type": "折扣", "desc": "周一至周四下午场5折", "condition": "12:00-18:00"}]},
+    {"venue_id": "V12", "name": "朝阳攀岩馆", "deals": [{"type": "体验课", "desc": "首次体验58元（原价98）", "condition": "新用户"}]},
+    {"venue_id": "V15", "name": "轰趴别墅馆", "deals": [{"type": "团购", "desc": "6人以上每人减30元", "condition": "需提前3天预约"}, {"type": "折扣", "desc": "周一至周四全天8折", "condition": "工作日"}]},
+    {"venue_id": "V16", "name": "CGV影城(望京店)", "deals": [{"type": "会员", "desc": "周三会员日半价", "condition": "会员卡用户"}, {"type": "4DX体验", "desc": "4DX厅首体验79元（原价120）", "condition": "新用户"}]},
+    {"venue_id": "V17", "name": "陶艺工坊", "deals": [{"type": "团购", "desc": "双人票168元（原价216），8折", "condition": "提前1天预约"}, {"type": "新人", "desc": "首次体验78元（原价108）", "condition": "新用户"}]},
+    {"venue_id": "V18", "name": "悦跑室内滑雪场", "deals": [{"type": "团购", "desc": "双人票388元（原价456）", "condition": "提前1天预约"}, {"type": "新人", "desc": "首滑体验价168元（原价228）", "condition": "新用户"}]}
+  ],
+  "combo_deals": [
+    {"name": "浪漫约会套餐", "venues": ["R06", "V05"], "desc": "意面工坊+万达影城双人套票299元", "original_price": 350, "combo_price": 299, "condition": "需同日使用"},
+    {"name": "亲子欢乐日", "venues": ["V07", "R17", "V10"], "desc": "水族馆+西贝亲子餐+乐高探索中心全家套票498元（2大1小）", "original_price": 680, "combo_price": 498, "condition": "周末专享，需提前1天预约"},
+    {"name": "朋友聚会包", "venues": ["V03", "R01", "V11"], "desc": "密室逃脱+川菜聚餐+KTV欢唱4人套票588元", "original_price": 768, "combo_price": 588, "condition": "4人起，需提前1天预约"},
+    {"name": "周末畅玩通票", "venues": ["V08", "R07", "V12"], "desc": "VR体验+串串香+攀岩单人通票198元", "original_price": 248, "combo_price": 198, "condition": "周末专享"},
+    {"name": "温泉养生套餐", "venues": ["V09", "R10"], "desc": "温泉度假村+素心斋养生餐双人套票488元", "original_price": 586, "combo_price": 488, "condition": "工作日专享"},
+    {"name": "文艺青年套餐", "venues": ["V04", "R14", "V17"], "desc": "美术馆+花厨下午茶+陶艺工坊双人套票388元", "original_price": 476, "combo_price": 388, "condition": "需提前1天预约"},
+    {"name": "打车到店免单程", "venues": ["R13"], "desc": "打车到海底捞消费满200免单程车费（最高20元）", "original_price": 0, "combo_price": 0, "condition": "到店消费满200元"},
+    {"name": "火锅电影夜", "venues": ["R16", "V05"], "desc": "巴奴火锅+万达影城双人套票328元", "original_price": 400, "combo_price": 328, "condition": "需同日使用"},
+    {"name": "运动达人套餐", "venues": ["V12", "R19", "V18"], "desc": "攀岩+烧烤+滑雪单人通票268元", "original_price": 346, "combo_price": 268, "condition": "周末专享"},
+    {"name": "高端约会套餐", "venues": ["R20", "V02"], "desc": "法餐+国家大剧院双人套票788元", "original_price": 940, "combo_price": 788, "condition": "需提前3天预约"}
+  ]
+}
